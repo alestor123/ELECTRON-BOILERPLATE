@@ -1,0 +1,30 @@
+{
+      "name": "app-name",
+      "productName": "App Name",
+      "version": "0.0.0",
+      "description": "A minimal Electron application",
+      "main": "App.js",
+      "scripts": {
+            "postinstall": "electron-builder install-app-deps",
+            "lint": "standard . --fix",
+            "test": "npm run lint && standard && node test.js | tap-spec",
+            "start": "electron .",
+            "pack": "electron-builder --dir",
+            "dist": "electron-builder --macos --linux --windows"
+      },
+      "repository": "https://github.com/electron/electron-quick-start",
+      "keywords": [
+            "Electron",
+            "quick",
+            "start",
+            "demo"
+      ],
+      "author": "Alestor Aldous",
+      "license": "MIT",
+      "devDependencies": {
+            "electron": "^19.0.4",
+            "standard": "^16.0.3",
+            "tap": "^15.0.9",
+            "tap-spec": "^5.0.0"
+      }
+}
